@@ -1,8 +1,3 @@
-body, html {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-}
 body {
 	display: flex;
 	flex-direction: row-reverse;
@@ -10,13 +5,27 @@ body {
 
 #toggleControls {
 	position: fixed;
+
+	z-index: 90;
+
+	margin: 4px;
+	padding: 4px;
+
+	background-color: lightseagreen;
+	border: 3px ridge gray;
 }
 
 #controls {
+	position: fixed;
 	display: flex;
 	flex-direction: column;
+
 	overflow-y: scroll;
 	height: 100vh;
+
+	background-color: rgba(255,255,255,0.7);
+	border-left: 3px ridge lightslategray;
+	border-right: 3px ridge lightslategray;
 }
 
 #controls > h3 {
@@ -26,13 +35,11 @@ body {
 #controls > div {
 	display: flex;
 	flex-direction: column;
+
 	gap: 4px;
-	border: 1px solid black;
+
 	margin: 8px;
 	padding: 8px;
-}
 
-body > div.container {
-	height: 100vh;
-	overflow-y: scroll;
+	border: 1px solid black;
 }
