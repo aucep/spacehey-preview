@@ -1,0 +1,38 @@
+body, html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#toggleControls {
+	position: fixed;
+}
+
+#controls {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+#controls > h3 {
+	margin: 0;
+}
+
+#controls > div {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	border: 1px solid black;
+	margin: 8px;
+	padding: 8px;
+}
+
+body > div.container {
+	height: 100vh;
+	overflow-y: scroll;
+}
